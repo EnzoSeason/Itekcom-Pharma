@@ -3,6 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <title>Limportant</title>
 
     <!-- Bootstrap core CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -15,8 +16,8 @@
 
     <div class="container">
       <div class="py-5 text-center">
-        <h2>Itekcom Pharma</h2>
-        <p class="lead">online pharmacy stores</p>
+        <h2>Limportant</h2>
+        <p class="lead">client information</p>
       </div>
 
       <div class="row">
@@ -39,7 +40,7 @@
             <div class="row">
               <div class="col-md-5 mb-3">
                 <label for="gender">Gender</label>
-                <select class="custom-select d-block w-100" id="gender" name="sex">
+                <select class="custom-select d-block w-100" name="gender">
                   <option value="">Choose...</option>
                   <option>Mr.</option>
                   <option>Mrs.</option>
@@ -50,23 +51,23 @@
 
             <div class="mb-3">
               <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <input type="email" class="form-control" name="email" placeholder="you@example.com">
             </div>
 
             <div class="mb-3">
               <label for="address">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="245 Route des Lucioles 06560 VALBONNE">
+              <input type="text" class="form-control" name="address" placeholder="30 rue d’Armaillé, 75017 Paris">
             </div>
 
             <div class="mb-3">
               <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Business Antipolis (1er Etage)">
+              <input type="text" class="form-control" name="address2" placeholder="les bureaux « La Matrice »(2eme Etage)">
             </div>
 
             <div class="row">
               <div class="col-md-5 mb-3">
                 <label for="country">Country</label>
-                <select class="custom-select d-block w-100" id="country">
+                <select class="custom-select d-block w-100" name="country">
                   <option value="">Choose...</option>
                   <option>France</option>
                   <option>China</option>
@@ -74,43 +75,35 @@
               </div>
             </div>
 
-            <hr class="mb-4">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info">
-              <label class="custom-control-label" for="save-info">Save this information for next time</label>
-            </div>
-            <hr class="mb-4">
-
-            <h4 class="mb-3">Payment</h4>
-
-            <div class="d-block my-3">
-              <div class="custom-control custom-radio">
-                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="">
-                <label class="custom-control-label" for="credit">Credit card</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input">
-                <label class="custom-control-label" for="debit">Debit card</label>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="paymentMethod">Payment</label>
+                <select class="custom-select d-block w-100" name="paymentMethod">
+                  <option value="">Choose...</option>
+                  <option>Credit card</option>
+                  <option>Debit card</option>
+                </select>
               </div>
             </div>
+
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="cc-name">Card number</label>
-                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                <input type="text" class="form-control" name="cc-name" >
               </div>
               <div class="col-md-6 mb-3">
                 <label for="cc-number">Expiration</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                <input type="text" class="form-control" name="cc-exp">
               </div>
             </div>
             <hr class="mb-4">
-            <input class="btn btn-primary btn-lg btn-block" type="submit" value="Continue to checkout">
+            <input class="btn btn-primary btn-lg btn-block" type="submit" value="Save your information">
           </form>
         </div>
       </div>
 
       <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">© 2005-2018 Itekcom</p>
+        <p class="mb-1">© 2017-2018 Limportant</p>
       </footer>
     </div>
 
